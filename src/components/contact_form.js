@@ -53,13 +53,17 @@ render() {
       <div className = "form-group">
       <input type = "text" ref = "phone" className = "form-control" placeholder = "Number"/>
       </div>
+
       <button type = "submit" className = "btn btn-primary">Submit</button>
+
       </form>
+      <div>
       <ul className = "col-md-4  list-group">
       {filteredContacts.map((contact)=> {
         return <Contact contact = {contact} key = {contact.id}/>
       })}
       </ul>
+      </div>
   </div>
 );
 };
